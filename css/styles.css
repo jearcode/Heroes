@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+
+}
+
+
+.top-header{
+
+
+    height: 100px;
+    background-color: #00669F;
+}
+
+.top-header p{
+
+    height: 30px;
+    padding-top: 10px;
+    background-color: #1CD1B0;
+    padding-left: 20px;
+}
+
+.top-header h1{
+
+    padding-top: 15px;
+    padding-left: 20px;
+    font-weight: 100px;
+}
+
+.boxes{
+
+    height: 700px;
+    position: relative;
+}
+
+.first-box{
+
+    height: 590px;
+    width: 290px;
+    border-radius: 20px;
+    position: absolute;
+    top: 90px;
+    left: 100px;
+    background-image: url(../img/background-batman.png);
+    background-repeat: no-repeat;
+    box-shadow: 10px;
+    background-color: #F3F3F3;
+    box-shadow: 0px 5px 4px grey;
+
+
+}
+
+.second-box{
+
+    position: absolute;
+    height: 590px;
+    width: 290px;
+    border-radius: 20px;
+    left: 500px;
+    top: 90px;
+    background-image: url(../img/background-harley.png);
+    background-repeat: no-repeat;
+    background-color: #F3F3F3;
+    box-shadow: 0px 5px 4px grey;
+}
+
+.third-box{
+
+    position: absolute;
+    height: 590px;
+    width: 290px;
+    border-radius: 20px;
+    top: 90px;
+    left: 890px;
+    background-image: url(../img/background-batman.png);
+    background-repeat: no-repeat;
+    background-color: #F3F3F3;
+    box-shadow: 0px 5px 4px grey;
+}
+
+
+.icons img{
+
+    
+    border-radius: 100px;
+    left: 30%;
+    top: 20%;
+    position: absolute;
+}
+
+.fa-solid{
+    color: red;
+    position: absolute;
+    font-size: 25px;
+    left: 10px;
+    top: 10px;
+}
+
+.content p{
+
+    position: absolute;
+    top: 50%;
+    padding: 20px;
+    text-align: left;
+
+}
+
+.content{
+
+    text-align: center;
+}
+
+h2{
+
+    top: 255px;
+    position: relative;
+    padding-bottom: 20px;
+
+}
+
+button{
+
+    width: 120px;
+    height: 40px;
+    left: 30%;
+    top: 85%;
+    position: absolute;
+    border: none;
+    background-color: #00669F;
+    color: white;
+    cursor: pointer;
+}
+
+
+footer{
+
+    background-color: #00669F;
+    margin-top: 90px;
+    height: 50px;
+}
+
+footer p{
+
+    color: white;
+    padding-top: 15px;
+}
