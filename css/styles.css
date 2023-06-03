@@ -4,32 +4,45 @@
 
     margin: 0;
     padding: 0;
-    font-family: Roboto, sans-serif;
 
 }
 
+body{
+
+    font-family: Roboto, sans-serif;
+}
 
 .top-header{
 
-
-    height: 100px;
-    background-color: #00669F;
+    height: 30px;
+    background-color: #1CD1B0;
 }
 
 .top-header p{
 
-    height: 30px;
-    padding-top: 10px;
-    background-color: #1CD1B0;
     padding-left: 20px;
+    padding-top: 5px;
 }
 
-.top-header h1{
+.top-title{
 
+    height: 70px;
+    background-color: #00669F;
+    position: sticky;
+    top: 20px;
+    z-index: 10;
+}
+
+.top-title h1{
+
+    padding-left: 20px;
     padding-top: 15px;
-    padding-left: 20px;
-    font-weight: 100px;
+
 }
+
+
+
+
 
 .boxes{
 
