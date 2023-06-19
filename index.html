@@ -3,113 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Héroes</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Héroes</title>
+    </head>
 <body>
     
     <header>
 
-        <section class="top-header">
-
-            <p>Descuentos 20%</p> 
-
-        </section>
+        <p>Descuentos del 20%</p>
 
     </header>
 
-    <div class="top-title">
-        <h1>Heroes</h1>
-    </div> 
+    <h1>Héroes</h1>
 
     <main>
 
-    <section class="boxes">
+        <section class="cards-container">
 
-            <div class="first-box">
-
-                <div class="icons">
-
-                    <img src="./img/icon-batman.png" alt="Icono de batman">
-                    <i class="fa-solid fa-heart"></i>
-
-                </div>
-
-                <div class="content">
-                    <h2>BATMAN</h2>
-                    <p>
-                        Bruce Wayne es el único personaje que se identifica como Batman 
-                        y aparece en Batman, Detective Comics, Batman y Robin, y Batman: 
-                        The Dark Knight. Dick Grayson vuelve al manto de Nightwing
-                    </p>
-                </div>
-
-                <div>
-
-                    <button>Ver más</button>
-
-                </div>
-
-
-            </div>
-
-
-            <div class="second-box">
-
-                <div class="icons">
-                    <img src="./img/icon-harley.png" alt="Icono de batman">
+            <article class="card card-batman">
+                
+                <div class="top-container top-container-batman">
                     <i class="fa-solid fa-heart"></i>
                 </div>
-
-                <div class="content">
-                    <h2>Harley Quinn</h2>
-                    <p>
-                        La creación de Harley Quinn fue una idea de último minuto propuesta por el escritor 
-                        estadounidense Paul Dini para modificar una escena del vigésimo-segundo episodio 
-                        de Batman: la serie animada
-                    </p>
-                </div>
-
-                <div>
-
-                    <button>Ver más</button>
-
-                </div>
-
-            </div>
-            <div class="third-box">
-
-
-                <div class="icons">
-                    <img src="./img/icon-batman.png" alt="Icono de batman">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-
-                <div class="content">
-                    <h2>BATMAN</h2>
-                    <p>
+                <img class="hero" src="./img/icon-batman.png" alt="Batman">
+                <h3>Batman</h3>
+                <p>
                     Bruce Wayne es el único personaje que se identifica como Batman 
                     y aparece en Batman, Detective Comics, Batman y Robin, y Batman: 
                     The Dark Knight. Dick Grayson vuelve al manto de Nightwing
-                    </p>
+                </p>
+                <button>Ver más</button>
+            </article>
+
+            <article class="card card-harleyquinn desktop">
+
+                <div class="top-container top-container-harleyquinn">
+                    <i class="fa-solid fa-heart"></i>
                 </div>
+                <img class="hero" src="./img/icon-harley.png" alt="Harley Quinn">
+                <h3>Harley Quinn</h3>
+                <p>
+                    La creación de Harley Quinn fue una idea de último minuto propuesta por el escritor 
+                    estadounidense Paul Dini para modificar una escena del vigésimo-segundo episodio 
+                    de Batman: la serie animada
+                </p>
+                <button>Ver más</button>
 
-                <div>
 
-                    <button>Ver más</button>
+            </article>
 
+
+            <article class="card card-batman desktop">
+
+                <div class="top-container top-container-batman">
+                    <i class="fa-solid fa-heart"></i>
                 </div>
+                <img class="hero" src="./img/icon-batman.png" alt="Batman">
+                <h3>Batman</h3>
+                <p>
+                    Bruce Wayne es el único personaje que se identifica como Batman 
+                    y aparece en Batman, Detective Comics, Batman y Robin, y Batman: 
+                    The Dark Knight. Dick Grayson vuelve al manto de Nightwing
+                </p>
+                <button>Ver más</button>
 
-            </div>
+            </article>
 
-    </section>
+            <article class="card card-maravilla responsive-heros">
+
+                <div class="top-container top-container-maravilla">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img class="hero" src="./img/icon-maravilla.png" alt="Mujer Maravilla">
+                <h3>Mujer Maravilla</h3>
+                <p>
+                    Es una superheroína creada por William Moulton Marston para la editorial DC Comics. 
+                    Es una princesa guerrera de las Amazonas, pueblo ficticio basado en el de las amazonas 
+                    de la mitología griega. En su tierra natal es conocida como la princesa Diana de Temiscira 
+                    pero fuera de esta utiliza la identidad secreta de Diana Prince. 
+                </p>
+                <button>Ver más</button>
+
+            </article>
+
+            <article class="card card-superman responsive-heros">
+
+                <div class="top-container top-container-superman">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img class="hero" src="./img/icon-superman.png" alt="Superman">
+                <img class="hero supertwo" src="./img/icon-supermantwo.png" alt="Superman">
+                <h3>Superman</h3>
+                <p>
+                    Es un superhéroe que apareció por primera vez en los cómics estadounidenses publicados por DC Comics. ​
+                    El personaje fue creado por el escritor estadounidense Jerry Siegel y el artista canadiense Joe Shuster en 1933 
+                    cuando ambos se encontraban viviendo en Cleveland, Ohio. 
+                </p>
+                <button>Ver más</button>
+
+            </article>
+
+            <article class="card card-harleytwo2 responsive-heros tablet">
+
+                <div class="top-container top-container-harleytwo">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img class="hero" src="./img/icontwo-harley.png" alt="Harley">
+                <h3>Harley Quinn</h3>
+                <p>
+                    Harley Quinn es un personaje ficticio creado por los estadounidenses Paul Dini y Bruce Timm 
+                    para la editorial DC Comics. Quinn hizo su debut en el vigésimo-segundo 
+                    episodio de Batman: la serie animada, «El favor del Joker», en septiembre de 1992 y se 
+                    convirtió en una villana recurrente en la serie.
+                </p>
+                <button>Ver más</button>
+
+            </article>
+
+        </section>
+
     </main>
+
+
     <footer>
 
         <p>Todos los derechos reservados a FRONT END 1</p>
-
+        <img class="github" src="./img/GitHub.png" alt="GitHub Icono">
     </footer>
 
 

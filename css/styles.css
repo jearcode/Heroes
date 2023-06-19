@@ -4,161 +4,219 @@
 
     margin: 0;
     padding: 0;
-
-}
-
-body{
-
+    box-sizing: border-box;
     font-family: Roboto, sans-serif;
+
 }
 
-.top-header{
+:root{
 
-    height: 30px;
-    background-color: #1CD1B0;
+    --color-main: #00669F;
+    --color-secondary: #1CD1B0;
+    --color-background: #f3f3f3;
 }
 
-.top-header p{
+/* HEADER */
 
-    padding-left: 20px;
-    padding-top: 5px;
+header p{
+    background-color: var(--color-secondary);
+    padding: 0.625em 0 0.625em 1.6875em;
+    font-size: 0.9375em;
 }
 
-.top-title{
-
-    height: 70px;
-    background-color: #00669F;
+h1{
+    background-color: var(--color-main);
+    padding: 1.625rem 0 1.75rem 1.625rem;
     position: sticky;
-    top: 0px;
+    top: 0;
     z-index: 10;
-}
-
-.top-title h1{
-
-    padding-left: 20px;
-    padding-top: 15px;
 
 }
 
 
+/* MAIN */
 
+.cards-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 9.625em 0;
+    flex-wrap: wrap;
+}
 
-
-.boxes{
-
-    height: 700px;
+.card{
+    background-color: var(--color-background);
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 18.75em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
 }
 
-.first-box{
-
-    height: 590px;
-    width: 290px;
-    border-radius: 20px;
-    position: absolute;
-    top: 90px;
-    left: 100px;
+.top-container-batman{
     background-image: url(../img/background-batman.png);
-    background-repeat: no-repeat;
-    box-shadow: 10px;
-    background-color: #F3F3F3;
-    box-shadow: 0px 5px 4px grey;
-
-
 }
 
-.second-box{
-
-    position: absolute;
-    height: 590px;
-    width: 290px;
-    border-radius: 20px;
-    left: 500px;
-    top: 90px;
+.top-container-harleyquinn{
     background-image: url(../img/background-harley.png);
-    background-repeat: no-repeat;
-    background-color: #F3F3F3;
-    box-shadow: 0px 5px 4px grey;
 }
 
-.third-box{
+.top-container{
 
-    position: absolute;
-    height: 590px;
-    width: 290px;
-    border-radius: 20px;
-    top: 90px;
-    left: 890px;
-    background-image: url(../img/background-batman.png);
-    background-repeat: no-repeat;
-    background-color: #F3F3F3;
-    box-shadow: 0px 5px 4px grey;
+    width: 100%;
+    height: 12.0625em;
+    background-size: cover;
 }
 
-
-.icons img{
-
-    
-    border-radius: 100px;
-    left: 30%;
-    top: 20%;
-    position: absolute;
-}
-
-.fa-solid{
+.fa-heart{
     color: red;
+    font-size: 1.5rem;
+    padding: 0.625em 0 0 0.625em;
+}
+
+.hero{
     position: absolute;
-    font-size: 25px;
-    left: 10px;
-    top: 10px;
+    border-radius: 50%;
+    top: 8em;
 }
 
-.content p{
-
-    position: absolute;
-    top: 50%;
-    padding: 20px;
-    text-align: left;
-
+h3{
+    margin-top: 4.5625rem;
+    font-size: 1.875rem;
 }
 
-.content{
-
-    text-align: center;
+.card-batman h3{
+    text-transform: uppercase;
 }
 
-h2{
-
-    top: 255px;
-    position: relative;
-    padding-bottom: 20px;
-
+.card p{
+    font-size: 1rem;
+    margin: 0.625em 1em;
 }
 
-button{
+.card button{
 
-    width: 120px;
-    height: 40px;
-    left: 30%;
-    top: 85%;
-    position: absolute;
+    background-color: var(--color-main);
+    width: 8.04875em;
+    height: 3.0325em;
     border: none;
-    background-color: #00669F;
     color: white;
-    cursor: pointer;
+    margin: 2.3125em 1.155em;
 }
 
+/* RESPONSIVE TABLET */
+.top-container-maravilla{
+    background-image: url(../img/background-maravilla.png);
+    border-radius: 1.25em 1.25em 0 0;
+}
+
+.responsive-heros img{
+   width: 7.5em;
+   height: 7.5em;
+}
+
+.responsive-heros{
+    display: none;
+}
+
+.top-container-superman{
+    background-image: url(../img/background-superman.png);
+    border-radius: 1.25em 1.25em 0 0;
+}
+
+.card-superman h3{
+    text-transform: uppercase;
+}
+
+.top-container-harleytwo{
+    background-image: url(../img/background-harleytwo.png);
+    border-radius: 1.25em 1.25em 0 0;
+}
+
+
+
+/* FOTTER */
 
 footer{
-
-    background-color: #00669F;
-    margin-top: 90px;
-    height: 50px;
+    background-color: var(--color-main);
+    display: flex;
+    align-items: center;
 }
 
 footer p{
+    color: #FFF9F9;
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+    flex-grow: 1;
+}
 
-    color: white;
-    padding-top: 15px;
-    padding-left: 20px;
+footer img{
+    height: 1.5625em;
+    width: 5em;
+    margin-right: 0.9375em;
+}
+
+footer img{
+    display: none;
+}
+
+
+
+@media (max-width: 768px){
+ /* Tablets */
+ .responsive-heros{
+    display: flex;
+}
+
+.desktop{
+    display: none;
+}
+
+.cards-container{
+    margin: 2.5em 0 5.625em 0;
+}
+
+.card{
+    margin: 3.125em 0;
+}
+
+.supertwo{
+    display: none;
+}
+
+footer p{
+    font-size: 0.75rem;
+}
+
+footer img{
+    display: flex;
+}
+
+header p{
+    background-color: #D1891C;
+    padding: 0.25em 0 0.0625em 1.1875em;
+}
+
+}
+@media (max-width: 460px){
+ /* Smartphones */
+ .tablet{
+    display: none;
+ }
+
+ .supertwo{
+    display: flex;
+ }
+
+header p{
+    font-weight: bold;
+}
+
+ footer img{
+    display: flex;
+}
+
+
 }
