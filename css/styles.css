@@ -61,6 +61,7 @@ h1{
 
 .top-container-batman{
     background-image: url(../img/background-batman.png);
+    border-radius: 1.25em 1.25em 0 0;
 }
 
 .top-container-harleyquinn{
@@ -203,6 +204,7 @@ footer img{
 
 .card{
     margin: 3.125em 0;
+    width: 16.95em;
 }
 
 .supertwo{
