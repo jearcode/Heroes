@@ -14,6 +14,7 @@
     --color-main: #00669F;
     --color-secondary: #1CD1B0;
     --color-background: #f3f3f3;
+    --color-text: #ffffff;
 }
 
 /* HEADER */
@@ -35,6 +36,10 @@ h1{
 
 
 /* MAIN */
+
+.addHero{
+    display: none;
+}
 
 .cards-container{
     display: flex;
@@ -136,6 +141,7 @@ h3{
 
 
 
+
 /* FOTTER */
 
 footer{
@@ -166,6 +172,24 @@ footer img{
 
 @media (max-width: 768px){
  /* Tablets */
+
+ .addHero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    background-color: var(--color-main);
+    color: var(--color-text);
+    border-radius: 50%;
+    left: 88%;
+    margin-top: 15rem;
+    z-index: 10;
+    font-size: 1.5rem;
+}
+
  .responsive-heros{
     display: flex;
 }
@@ -200,8 +224,13 @@ header p{
 }
 
 }
+
 @media (max-width: 460px){
  /* Smartphones */
+
+ .addHero{
+    left: 85%;
+ }
  .tablet{
     display: none;
  }
