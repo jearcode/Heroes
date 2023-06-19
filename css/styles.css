@@ -177,8 +177,8 @@ footer img{
     justify-content: center;
     align-items: center;
     position: fixed;
-    width: 3rem;
-    height: 3rem;
+    width: 3.35rem;
+    height: 3.35rem;
     border: none;
     background-color: var(--color-main);
     color: var(--color-text);
@@ -228,7 +228,7 @@ header p{
  /* Smartphones */
 
  .addHero{
-    left: 83%;
+    left: 83.3%;
  }
  .tablet{
     display: none;
