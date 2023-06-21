@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+
+}
+
+:root{
+
+    --color-main: #00669F;
+    --color-secondary: #1CD1B0;
+    --color-background: #f3f3f3;
+    --color-text: #ffffff;
+}
+
+/* HEADER */
+
+header p{
+    background-color: var(--color-secondary);
+    padding: 0.425em 0 0.425em 0.5875em;
+    font-size: 0.9375em;
+}
+
+.headertop{
+    background-color: var(--color-main);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 1rem 0.7rem rgba(0, 0, 0, 0.25);
+}
+
+.anchor{
+    display: flex;
+    align-items: center;
+}
+
+.headertop a img{
+    width: 8rem;
+}
+
+.headertop a{
+    text-decoration: none;
+}
+
+.headertop a h1{
+    color: var(--color-text);
+    font-weight: 400;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+
+nav ul{
+    background-color: #001d2d;
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    color: var(--color-text);
+    justify-content: flex-end;
+}
+
+nav ul li{
+    padding: 0.2rem 0.8rem;
+    cursor: pointer;
+}
+
+/* ADDHERO.HTML */
+
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.formsgeneral{
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-main);
+    color: var(--color-text);
+    margin: 3.5rem 0;
+    border-radius: 50px;
+    flex-wrap: wrap;
+}
+
+.formstop{
+    text-align: center;
+    margin: 3em 0;
+}
+
+.formstop p{
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+.containerforms{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formleft{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    flex-wrap: wrap;
+}
+
+.formright{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* FORM IZQUIERDO */
+
+    /* FORM NOMBRE */
+    #nombre{
+        border-radius: 10px;
+        width: 14rem;
+        height: 2.3rem;
+        display: block;
+        border: none;
+        margin: 1rem 0;
+        padding: 0 0.5rem
+    }
+
+    /* FORM FECHA */
+    #date{
+        display: block;
+        margin: 1rem 0;
+        border-radius: 10px;
+        border: none;
+        width: 14rem;
+        height: 2.3rem;
+        padding: 0 0.5rem
+    }
+
+    /* FORM DESCRIPCIÓN */
+    #descripcion{
+        display: block;
+        margin: 1rem 0;
+        width: 14rem;
+        height: 15rem;
+        border-radius: 10px;
+        resize: none;
+        border: none;
+        padding: 1rem 0.5rem
+    }
+
+
+/* FORM DERECHO */
+
+    /* ESPECIE */
+    #especie{
+        display: block;
+        margin: 1rem 0;
+        width: 14rem;
+        height: 2.3rem;
+        border-radius: 10px;
+        border: none;
+    }
+
+    /* FOTO */
+    #doc{
+        margin: 1.5rem 0;
+        width: 20rem;
+        color: var(--color-text);
+        border: none;
+    }
+
+    /* PODERES */
+    .poderes{
+        margin: 0.5em 0;
+    }
+
+    /* TYPE HERO */
+    hr{
+        margin: 0.5em 0 0.5em 0;
+    }
+
+    .type-hero{
+        margin: 0.9em 0;
+    }
+
+    /* BUTTON */
+
+    .buttontop{
+        display: flex;
+        justify-content: center;
+    }
+
+    button{
+        cursor: pointer;
+        background-color: var(--color-secondary);
+        border: none;
+        width: 50%;
+        padding: 0.5em;
+        border-radius: 15px;
+        margin: 1em 0;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+
+    footer{
+        background-color: var(--color-main);
+        display: flex;
+        align-items: center;
+    }
+    
+    footer p{
+        color: #FFF9F9;
+        font-size: 1rem;
+        padding: 1rem;
+        text-align: center;
+        flex-grow: 1;
+    }
+    
+    footer img{
+        height: 0.9em;
+        margin-right: 0.9375em;
+    }
+    
+    footer img{
+        display: none;
+    }

@@ -21,24 +21,66 @@
 
 header p{
     background-color: var(--color-secondary);
-    padding: 0.625em 0 0.625em 1.6875em;
+    padding: 0.425em 0 0.425em 0.5875em;
     font-size: 0.9375em;
 }
 
-h1{
+.headertop{
     background-color: var(--color-main);
-    padding: 1.625rem 0 1.75rem 1.625rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: sticky;
     top: 0;
     z-index: 10;
+    box-shadow: 0 1rem 0.7rem rgba(0, 0, 0, 0.25);
+}
 
+.headertop img{
+    width: 8rem;
+}
+
+.headertop h1{
+    color: var(--color-text);
+    flex-grow: 1;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+nav ul{
+    background-color: #001d2d;
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    color: var(--color-text);
+    justify-content: flex-end;
+}
+
+nav ul li{
+    padding: 0.2rem 0.8rem;
+    cursor: pointer;
 }
 
 
 /* MAIN */
 
 .addHero{
-    display: none;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 3.35rem;
+    height: 3.35rem;
+    border: none;
+    background-color: var(--color-main);
+    color: var(--color-text);
+    border-radius: 50%;
+    left: 94%;
+    margin-top: 15rem;
+    z-index: 10;
+    font-size: 1.5rem;
 }
 
 .cards-container{
@@ -174,20 +216,7 @@ footer img{
  /* Tablets */
 
  .addHero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    width: 3.35rem;
-    height: 3.35rem;
-    border: none;
-    background-color: var(--color-main);
-    color: var(--color-text);
-    border-radius: 50%;
     left: 88%;
-    margin-top: 15rem;
-    z-index: 10;
-    font-size: 1.5rem;
 }
 
  .responsive-heros{
@@ -225,6 +254,9 @@ header p{
 }
 
 }
+
+
+
 
 @media (max-width: 460px){
  /* Smartphones */

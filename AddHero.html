@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Héroes</title>
+    </head>
+<body>
+    
+    <header>
+
+        <p>Descuentos del 20%</p>
+
+    </header>
+
+    <div class="headertop">
+        <a class="anchor" href="index.html">
+            <img src="./img/Logo.png" alt="Home Logo">
+            <h1>Nombre Tienda</h1>
+        </a>
+    </div>
+    
+
+    <nav>
+
+        <ul>
+
+            <li>Contacto</li>
+            <li>Registrarme</li>
+            <li>Ingresar</li>
+
+        </ul>
+
+    </nav>
+
+
+    <main>
+
+        <section class="container">
+
+            <section class="formsgeneral">
+
+                <form action="AddHero.html" method="post">
+                    <article class="formstop">
+
+                        <h2>¡Añadí tu súper!</h2>
+                        <p>Agrega tu personaje favorito completando las opciones</p>
+
+                    </article>
+
+                    <article class="containerforms">
+
+                        <div class="formleft">
+
+                            
+
+                                <label for="nombre">*Nombre</label>
+                                <input type="text" name="nombre" id="nombre" required>
+
+                                <label for="date">Fecha</label>
+                                <input type="date" name="date" id="date">
+                                <textarea name="descripcion" id="descripcion" placeholder="Descripción"></textarea>
+                            
+
+                            
+
+                        </div>
+
+                        <div class="formright">
+                            <label for="especie">Especie</label>
+                            <select name="especie" id="especie" required>
+
+                                <option value="" disabled selected hidden>Seleccionar una opción</option>
+                                <option value="Terrestre">Terrestre</option>
+                                <option value="Aereo">Aereo</option>
+                                <option value="Alienigena">Alienigena</option>
+                                <option value="Humanoide">Humanoide</option>
+
+                            </select>
+
+                            <label for="doc">Agregar foto</label>
+                            <input type="file" name="iconhero" accept=".png, .jpg" id="doc">
+
+                            <label class="poderes">Poderes</label>
+                                
+                            <label for="volar">
+                            <input class="poderes" type="checkbox" name="poderes" id="volar" value="Volar">
+                            Volar
+                            </label>
+                            <label for="superinteligencia">
+                            <input class="poderes" type="checkbox" name="poderes" id="superinteligencia" value="Superinteligencia">
+                            Super Inteligencia
+                            </label>
+                            <label for="rayolaser">
+                            <input class="poderes" type="checkbox" name="poderes" id="rayolaser" value="Vista de rayo láser">
+                            Vista de rayo láser
+                            </label>
+
+                            <label for="billeteragorda">
+                            <input class="poderes" type="checkbox" name="poderes" id="billeteragorda" value="Billetera gorda">
+                            Billetera Gorda
+                            </label>
+
+                            <hr>
+                            <label>Tipo de Personaje</label>
+                            <label for="heroe-heroina">
+                            <input class="type-hero"  type="radio" name="typehero" id="heroe-heroina" value="heroe-heroina">
+                            Héroe/Heroína</label>
+                            <label for="villano-villana">
+                            <input class="typehero" type="radio" name="typehero" id="villano-villana" value="villano-villana">
+                            Villano/Villana</label>
+
+                        </div>
+                        
+                    </article>
+                    <article class="buttontop">
+                        <button type="submit">Añadir</button>
+                    </article>
+                </form>
+                
+                
+
+            </section>
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>Todos los derechos reservados a FRONT END 1</p>
+        <img class="github" src="./img/GitHub.png" alt="GitHub Icono">
+    </footer>
+
+
+
+</body>
+</html>
