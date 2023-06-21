@@ -51,15 +51,21 @@ header p{
 nav ul{
     background-color: #001d2d;
     display: flex;
-    flex-wrap: nowrap;
-    list-style: none;
-    color: var(--color-text);
     justify-content: flex-end;
+    list-style: none;
 }
 
-nav ul li{
+
+nav ul li a{
     padding: 0.2rem 0.8rem;
+    list-style: none;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+nav ul a:hover{
     cursor: pointer;
+    color: var(--color-main);
 }
 
 
@@ -81,6 +87,10 @@ nav ul li{
     margin-top: 15rem;
     z-index: 10;
     font-size: 1.5rem;
+}
+
+.addHero:hover{
+    background-color: #001d2d;
 }
 
 .cards-container{
@@ -151,6 +161,11 @@ h3{
     border: none;
     color: white;
     margin: 2.3125em 1.155em;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background-color: #001d2d;
 }
 
 /* RESPONSIVE TABLET */

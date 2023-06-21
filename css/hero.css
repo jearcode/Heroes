@@ -57,15 +57,21 @@ header p{
 nav ul{
     background-color: #001d2d;
     display: flex;
-    flex-wrap: nowrap;
-    list-style: none;
-    color: var(--color-text);
     justify-content: flex-end;
+    list-style: none;
 }
 
-nav ul li{
+
+nav ul li a{
     padding: 0.2rem 0.8rem;
+    list-style: none;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+nav ul a:hover{
     cursor: pointer;
+    color: var(--color-main);
 }
 
 /* ADDHERO.HTML */
@@ -207,6 +213,34 @@ nav ul li{
         font-weight: 700;
     }
 
+
+/* PSEUDOSELECTORES */
+    #nombre:hover {
+    border: 2px solid rgb(0, 255, 255);
+    }
+    #especie:hover {
+    border: 2px solid rgb(0, 255, 255);
+    }
+    #date:hover {
+    border: 2px solid rgb(0, 255, 255);
+    }
+    #descripcion:hover {
+    border: 2px solid rgb(0, 255, 255);
+    }
+    #doc:hover {
+    border: 2px solid rgb(0, 255, 255);
+    }
+    #especie:hover {
+    border: 2px solid rgb(0, 255, 255);
+    }
+
+    article button:hover{
+        background-color: #001d2d;
+        color: white;
+    }
+    
+
+    /* FOOTER */
 
     footer{
         background-color: var(--color-main);
